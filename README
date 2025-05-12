@@ -1,3 +1,17 @@
 jeston_orin_hc_sr04
+--------------------------------
 
+sudo lshw > lshw.log
+gpioinfo > gpioinfo.log
+
+GPIO connection:
+
+PH.01(output) -> Trig
+PH.02(input)  -> Echo
+
+https://forums.developer.nvidia.com/t/reading-sensor-data/245924/3
+
+however we cannot directly connect jeston AGX to the sensor because the sensor requires 5V and AGX output 3.3V
+
+--------------------------------
 wheatfox 2025
